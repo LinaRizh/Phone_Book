@@ -3,7 +3,6 @@ from queue import Empty
 import model
 
 def log_tel(exp_format):
-    # time = dt.now().strftime('%H:%M')
     with open('log_tel.csv', 'a') as logf:
         if exp_format == 1:     
             logf.write(f'{(model.surname)} {(model.name)} {(model.phone)} {(model.comment)}')
@@ -24,11 +23,8 @@ def format():
 
 def imp_tel(imp_format, exp_format):
     if imp_format > 1:
-        # time = dt.now().strftime('%H:%M')
-        # with open('imp_tel.csv', 'r', encoding='UTF-8') as logf:
         a = open("imp_tel.csv", "r")
-        # l = (a.readline()).split(' ')
-        # if len(l) > 1:
+
         for line in a:
             if ';' in line:
                 model.init(line.split(';'))

@@ -11,4 +11,3 @@ def init(list_date):
     name = list_date[1]
     phone = list_date[2]
     comment = list_date[3]
-# init(get_data())

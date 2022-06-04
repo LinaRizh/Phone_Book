@@ -11,4 +11,3 @@ if metod == 'file':
 else: 
     init(get_data())
     log_tel(view)
-
